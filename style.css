@@ -1,0 +1,187 @@
+/*
+===========================
+global style
+===========================
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  font-family: system-ui, -apple-system, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #352f5b;
+  color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.border {
+  border: 5px solid #2d2d2d;
+}
+
+/*
+===========================
+h1 style
+===========================
+*/
+
+h1.main-header {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+
+  background-image: linear-gradient(to top, #352f5b, rgb(255, 255, 255, 0.19));
+}
+
+/*
+===========================
+task style
+===========================
+*/
+
+.task {
+  width: 70vw;
+  margin-inline: auto;
+  padding-block: 0.8rem;
+  margin-block: 2rem;
+
+  justify-content: space-between;
+  align-items: center;
+
+  /*glassmorphism*/
+  background: rgba(34, 139, 177, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  border-bottom: 2px solid white;
+}
+
+.icon {
+  font-size: 1.7rem;
+  transition: all 0.2s;
+}
+
+.icon:hover {
+  font-size: 1.9rem;
+}
+
+.icon-star,
+.icon-trash {
+  opacity: 0.5;
+}
+
+.icon-star {
+  margin-left: 7px;
+  padding: 7px;
+}
+
+.icon-star:hover,
+.icon-trash:hover {
+  opacity: 1;
+}
+
+.icon-angry2 {
+  color: orange;
+}
+
+.icon-trash {
+  margin-right: 1.1rem;
+}
+
+p.task-title {
+  font-size: 2rem;
+
+}
+
+
+/*
+===========================
+for js 
+===========================
+*/
+.active {
+  display: block;
+}
+
+.in-active {
+  display: none;
+}
+
+.icon-heart {
+  color: red;
+}
+
+.icon-heart:hover {
+  font-size: 29px;
+}
+
+/*
+===========================
+new task style
+===========================
+*/
+
+form#myForm {
+margin-bottom: 200px;
+}
+
+form.buttom {
+  text-align: center;
+  display: block;
+  margin-top: 4rem;
+}
+
+.buttom h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 45vw;
+
+ 
+}
+
+.icon-upload {
+  all: unset;
+  font-size: 2.7rem;
+
+  position: relative;
+  top: 12px;
+  left: 20px;
+  transition: all 0.2s;
+}
+.icon-upload:hover {
+  font-size: 2.9rem;
+}
+
+.finished {
+  text-decoration-line: line-through;
+  text-decoration-style: wavy;
+}
+
+.orange {
+  color: orange;
+  opacity: 1;
+}

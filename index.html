@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="shortcut icon" href="./icon/list.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./icon/style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <h1 class="main-header">To Do List</h1>
+    <div id="tasks">
+      <div class="task flex">
+        <i class="icon icon-star"></i>
+        <p lang="ar" class="task-title">Task1</p>
+
+        <div class="right" style="margin-right: 15px">
+          <i class="icon icon-trash"></i>
+          <i class="icon icon-angry2"></i>
+        </div>
+      </div>
+
+      <div class="task flex">
+        <i class="icon icon-star"></i>
+        <p lang="ar" class="task-title">Task2</p>
+        <div class="right" style="margin-right: 15px">
+          <i class="icon icon-trash"></i>
+          <i class="icon icon-angry2"></i>
+        </div>
+      </div>
+    </div>
+
+    <form id="myForm" class="buttom">
+      <h2 lang="ar">هاا اي تاني ؟</h2>
+
+      <input
+        lang="ar"
+        placeholder="هتعمل اي يمعلم؟؟"
+        type="text"
+        name="dd"
+        id="inputField"
+      />
+      <button id="enter" class="icon icon-upload" type="submit"></button>
+    </form>
+
+    <!-- </div> -->
+  </body>
+</html>
